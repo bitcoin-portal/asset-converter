@@ -67,7 +67,7 @@
             "asset_protocol": "ERC-20"
         },
         {
-            "currency_code": "MATIC",
+            "currency_code": "MATIC_POLYGON",
             "asset_id": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
             "blockchain": "ETH",
             "asset_protocol": "ERC-20"
