@@ -56,7 +56,7 @@
         },
         {
             "currency_code": "LINK",
-            "asset_id": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+            "asset_id": "0x514910771af9ca656af840dff83e8264ecf986ca",
             "blockchain": "ETH",
             "asset_protocol": "ERC-20"
         },
