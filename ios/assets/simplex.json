@@ -3,50 +3,66 @@
         {
             "currency_code": "AVAX",
             "asset_id": "AVAX",
-            "blockchain": "AVAX",
-            "asset_protocol": "AVAX"
+            "ios_blockchain": "AVAX",
+            "ios_asset_protocol": "AVAX",
+            "android_blockchain": "AVAX_BLOCKCHAIN",
+            "android_asset_protocol": "AVAX_PROTOCOL"
         },
         {
             "currency_code": "BCH",
             "asset_id": "BCH",
-            "blockchain": "BCH",
-            "asset_protocol": "BCH"
+            "ios_blockchain": "BCH",
+            "ios_asset_protocol": "BCH",
+            "android_blockchain": "BCH_BLOCKCHAIN",
+            "android_asset_protocol": "BCH_PROTOCOL"
         },
         {
             "currency_code": "BTC",
             "asset_id": "BTC",
-            "blockchain": "BTC",
-            "asset_protocol": "BTC"
+            "ios_blockchain": "BTC",
+            "ios_asset_protocol": "BTC",
+            "android_blockchain": "BTC_BLOCKCHAIN",
+            "android_asset_protocol": "BTC_PROTOCOL"
         },
         {
             "currency_code": "ETH",
             "asset_id": "ETH",
-            "blockchain": "ETH",
-            "asset_protocol": "ETH"
+            "ios_blockchain": "ETH",
+            "ios_asset_protocol": "ETH",
+            "android_blockchain": "ETH_BLOCKCHAIN",
+            "android_asset_protocol": "ETH_PROTOCOL"
         },
         {
             "currency_code": "MATIC",
             "asset_id": "MATIC",
-            "blockchain": "MATIC",
-            "asset_protocol": "MATIC"
+            "ios_blockchain": "MATIC",
+            "ios_asset_protocol": "MATIC",
+            "android_blockchain": "MATIC_BLOCKCHAIN",
+            "android_asset_protocol": "MATIC_PROTOCOL"
         },
         {
             "currency_code": "SUSHI",
             "asset_id": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
-            "blockchain": "ETH",
-            "asset_protocol": "ERC20"
+            "ios_blockchain": "ETH",
+            "ios_asset_protocol": "ERC20",
+            "android_blockchain": "ETH_BLOCKCHAIN",
+            "android_asset_protocol": "ERC_20_PROTOCOL"
         },
         {
             "currency_code": "USDT",
             "asset_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-            "blockchain": "ETH",
-            "asset_protocol": "ERC20"
+            "ios_blockchain": "ETH",
+            "ios_asset_protocol": "ERC20",
+            "android_blockchain": "ETH_BLOCKCHAIN",
+            "android_asset_protocol": "ERC_20_PROTOCOL"
         },
         {
             "currency_code": "USDC",
             "asset_id": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-            "blockchain": "ETH",
-            "asset_protocol": "ERC20"
+            "ios_blockchain": "ETH",
+            "ios_asset_protocol": "ERC20",
+            "android_blockchain": "ETH_BLOCKCHAIN",
+            "android_asset_protocol": "ERC_20_PROTOCOL"
         }
     ]
 }
