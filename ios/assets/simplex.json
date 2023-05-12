@@ -1,0 +1,52 @@
+{
+    "assets": [
+        {
+            "currency_code": "AVAX",
+            "asset_id": "AVAX",
+            "blockchain": "AVAX",
+            "asset_protocol": "AVAX"
+        },
+        {
+            "currency_code": "BCH",
+            "asset_id": "BCH",
+            "blockchain": "BCH",
+            "asset_protocol": "BCH"
+        },
+        {
+            "currency_code": "BTC",
+            "asset_id": "BTC",
+            "blockchain": "BTC",
+            "asset_protocol": "BTC"
+        },
+        {
+            "currency_code": "ETH",
+            "asset_id": "ETH",
+            "blockchain": "ETH",
+            "asset_protocol": "ETH"
+        },
+        {
+            "currency_code": "MATIC",
+            "asset_id": "MATIC",
+            "blockchain": "MATIC",
+            "asset_protocol": "MATIC"
+        },
+        {
+            "currency_code": "SUSHI",
+            "asset_id": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
+            "blockchain": "ETH",
+            "asset_protocol": "ETH"
+        },
+        {
+            "currency_code": "USDT",
+            "asset_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            "blockchain": "ETH",
+            "asset_protocol": "ERC20"
+        },
+        {
+            "currency_code": "USDC",
+            "asset_id": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "blockchain": "ETH",
+            "asset_protocol": "ERC20"
+        }
+    ]
+}
