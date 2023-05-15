@@ -3,9 +3,9 @@ protocol  AssetInteractorProtocol {
     /// Get list of assetIdV2 compound keys.
     func getAssetList(provider: Provider) -> [String]
     /// Get compound key of assetIdV2 if any match.
-    func convertProviderAssetToAssetIdV2(asset: ProviderAsset, provider: Provider) -> String?
+    func convertProviderAssetToAssetIdV2(asset: String, provider: Provider) -> String?
     /// Get provider currency code.
-    func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> ProviderAsset?
+    func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> String?
 }
 
 final class AssetInteractor: AssetInteractorProtocol {
@@ -22,13 +22,17 @@ final class AssetInteractor: AssetInteractorProtocol {
         return fetchedList.map({ $0.value })
     }
 
-    func convertProviderAssetToAssetIdV2(asset: ProviderAsset, provider: Provider) -> String? {
-//        getAssetList(provider: provider)
-        // TODO: fix this
-        return nil
+    func convertProviderAssetToAssetIdV2(asset: String, provider: Provider) -> String? {
+        let cachedAssets = assetListDict[provider]
+        guard cachedAssets == nil else {
+            return cachedAssets?[asset]
+        }
+        let fetchedList = getAssetList(provider: provider) ?? [:]
+        assetListDict[provider] = fetchedList
+        return fetchedList[asset]
     }
-    
-    func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> ProviderAsset? {
+
+    func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> String? {
         // TODO: fix this
         return nil
     }
