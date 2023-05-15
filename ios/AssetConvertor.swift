@@ -1,4 +1,4 @@
-final class Converter {
+final class AssetConvertor {
     static let assetInteractor = AssetInteractor()
 
     /// Get list of assetIdV2 compound keys.
