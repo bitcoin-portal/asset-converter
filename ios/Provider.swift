@@ -1,4 +1,4 @@
-enum Provider: String {
+public enum Provider: String {
     case banxa
     case moonpay
     case simplex
