@@ -16,7 +16,7 @@ struct ProviderAsset: Decodable {
     enum CodingKeys: String, CodingKey {
         case compoundKey = "compound_key"
         case currencyCode = "currency_code"
-        case assetId = "ios_asset_id"
+        case assetId = "asset_id"
         case blockchain = "ios_blockchain"
         case assetProtocol = "ios_asset_protocol"
     }
