@@ -32,7 +32,7 @@ let package = Package(
             path: "ios/",
             // exclude: ["android"],
             resources: [
-                .copy("Resources/assets")
+                .process("Resources/assets")
             ]
         ),
         .testTarget(
