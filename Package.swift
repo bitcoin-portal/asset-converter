@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "AssetConvertors",
     platforms: [
-         .iOS(.v15),
+         .iOS(.v12),
          .tvOS(.v9),
          .macOS(.v10_10),
          .watchOS(.v3),
@@ -32,7 +32,7 @@ let package = Package(
             path: "ios/",
             // exclude: ["android"],
             resources: [
-                .copy("assets")
+                .copy("Resources/assets")
             ]
         ),
         .testTarget(
