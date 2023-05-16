@@ -4,9 +4,11 @@ import class Foundation.Bundle
 protocol  AssetInteractorProtocol {
     /// Get list of assetIdV2 compound keys.
     func getAssetList(provider: Provider) -> [String]
-    /// Get compound key of assetIdV2 if any match.
+    /// Get provider specific compound key from assetIdV2 compound key.
+    /// Check unit test for samples.
     func convertProviderAssetToAssetIdV2(asset: String, provider: Provider) -> String?
-    /// Get provider currency code.
+    /// Get assetIdV2 compound key from provider specific compound key.
+    /// Check unit test for samples.
     func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> String?
 }
 

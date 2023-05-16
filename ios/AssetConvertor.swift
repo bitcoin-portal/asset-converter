@@ -6,12 +6,14 @@ public final class AssetConvertor {
         assetInteractor.getAssetList(provider: provider)
     }
     
-    /// Get compound key of assetIdV2 if any match.
+    /// Get provider specific compound key from assetIdV2 compound key.
+    /// Check unit test for samples.
     public static func convertProviderAssetToAssetIdV2(asset: String, provider: Provider) -> String? {
         return assetInteractor.convertProviderAssetToAssetIdV2(asset: asset, provider: provider)
     }
 
-    /// Get provider currency code.
+    /// Get assetIdV2 compound key from provider specific compound key.
+    /// Check unit test for samples.
     public static func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> String? {
         return assetInteractor.convertAssetIdV2ToProviderAsset(assetIdV2: assetIdV2, provider: provider)
     }
