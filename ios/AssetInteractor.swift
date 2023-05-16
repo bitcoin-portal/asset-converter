@@ -41,7 +41,7 @@ final class AssetInteractor: AssetInteractorProtocol {
 
     private func getAssetList(provider: Provider) -> [String: String]? {
         let fileName = provider.rawValue
-        guard let path = Bundle.main.path(forResource: fileName, ofType: "json") else {
+        guard let path = Bundle.module.path(forResource: fileName, ofType: "json") else {
             return nil
         }
 
