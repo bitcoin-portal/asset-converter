@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "AssetConvertors",
     platforms: [
-         .iOS(.v12),
+         .iOS(.v15),
          .tvOS(.v9),
          .macOS(.v10_10),
          .watchOS(.v3),
@@ -29,7 +29,12 @@ let package = Package(
             dependencies: [
                 // .product(name: "Amplitude", package: "Amplitude-iOS"),
             ],
-            path: "ios/"),
+            path: "ios/",
+            // exclude: ["android"],
+            resources: [
+                .process("../assets")
+            ]
+        ),
         .testTarget(
             name: "AssetConvertorsTests",
             dependencies: ["AssetConvertors"]),
