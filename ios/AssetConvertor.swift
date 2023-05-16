@@ -13,6 +13,6 @@ public final class AssetConvertor {
 
     /// Get provider currency code.
     public static func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> String? {
-        return nil
+        return assetInteractor.convertAssetIdV2ToProviderAsset(assetIdV2: assetIdV2, provider: provider)
     }
 }
