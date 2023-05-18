@@ -1,5 +1,4 @@
 import Foundation
-import class Foundation.Bundle
 
 protocol  AssetInteractorProtocol {
     /// Get list of assetIdV2 compound keys.
