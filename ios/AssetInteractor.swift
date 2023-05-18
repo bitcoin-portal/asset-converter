@@ -1,6 +1,6 @@
 import Foundation
 
-protocol  AssetInteractorProtocol {
+protocol AssetInteractorProtocol {
     /// Get list of assetIdV2 compound keys.
     func getAssetList(provider: Provider) -> [String]
     /// Get provider specific compound key from assetIdV2 compound key.

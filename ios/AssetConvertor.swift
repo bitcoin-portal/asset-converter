@@ -5,7 +5,7 @@ public final class AssetConvertor {
     public static func getAssetList(provider: Provider) -> [String] {
         assetInteractor.getAssetList(provider: provider)
     }
-    
+
     /// Get provider specific compound key from assetIdV2 compound key.
     /// Check unit test for samples.
     public static func convertProviderAssetToAssetIdV2(asset: String, provider: Provider) -> String? {
