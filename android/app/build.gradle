@@ -15,6 +15,12 @@ android {
     consumerProguardFiles "consumer-rules.pro"
   }
 
+  sourceSets {
+    main {
+      assets.srcDirs += "../../buyassets"
+    }
+  }
+
   buildTypes {
     release {
       minifyEnabled false

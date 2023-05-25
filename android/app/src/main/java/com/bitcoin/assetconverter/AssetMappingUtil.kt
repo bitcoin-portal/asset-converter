@@ -18,22 +18,34 @@ class AssetMappingUtil {
             val json = Json { ignoreUnknownKeys = true }
             when(T::class.java) {
                 BanxaAssetMapping::class.java -> {
-                    val assetMappingJson = context.resources.openRawResource(R.raw.banxa)
-                    val assetMapping = json.decodeFromStream<BanxaAssetMapping>(assetMappingJson)
-
-                    return assetMapping as T
+                    return try {
+                        val assetManager = context.assets
+                        val inputStream = assetManager.open("banxa.json")
+                        val assetMapping = json.decodeFromStream<BanxaAssetMapping>(inputStream)
+                        assetMapping as T
+                    }catch (e: Exception) {
+                        throw e
+                    }
                 }
                 MoonpayAssetMapping::class.java -> {
-                    val assetMappingJson = context.resources.openRawResource(R.raw.moonpay)
-                    val assetMapping = json.decodeFromStream<MoonpayAssetMapping>(assetMappingJson)
-
-                    return assetMapping as T
+                    return try {
+                        val assetManager = context.assets
+                        val inputStream = assetManager.open("moonpay.json")
+                        val assetMapping = json.decodeFromStream<MoonpayAssetMapping>(inputStream)
+                        assetMapping as T
+                    }catch (e: Exception) {
+                        throw e
+                    }
                 }
                 SimplexAssetMapping::class.java -> {
-                    val assetMappingJson = context.resources.openRawResource(R.raw.simplex)
-                    val assetMapping = json.decodeFromStream<SimplexAssetMapping>(assetMappingJson)
-
-                    return assetMapping as T
+                    return try {
+                        val assetManager = context.assets
+                        val inputStream = assetManager.open("simplex.json")
+                        val assetMapping = json.decodeFromStream<SimplexAssetMapping>(inputStream)
+                        assetMapping as T
+                    }catch (e: Exception) {
+                        throw e
+                    }
                 }
             }
 
