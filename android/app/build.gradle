@@ -43,6 +43,11 @@ dependencies {
 }
 
 publishing {
+    publications {
+        register<MavenPublication>("gpr") {
+            from(components["java"])
+        }
+    }
     repositories {
         maven {
             name = "GitHubPackages"
@@ -51,11 +56,6 @@ publishing {
                 username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
                 password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
             }
-        }
-    }
-    publications {
-        register<MavenPublication>("gpr") {
-            from(components["java"])
         }
     }
 }
