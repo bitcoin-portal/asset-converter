@@ -76,6 +76,7 @@ fastlane/.history
 *.iml
 
 .DS_Store
+*/.DS_Store
 
 # For rbenv
 vendor
