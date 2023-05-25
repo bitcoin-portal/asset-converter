@@ -76,6 +76,7 @@ fastlane/.history
 *.iml
 
 .DS_Store
+*/.DS_Store
 
 # For rbenv
 vendor
@@ -101,6 +102,5 @@ BitcoincomTests/GeneratedMock.swift
 
 env-vars.sh
 BitcoinComWallet/GeneratedSecret.swift
-
 
 android/app/build
