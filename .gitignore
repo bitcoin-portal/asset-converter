@@ -106,3 +106,6 @@ BitcoinComWallet/GeneratedSecret.swift
 android/app/build
 
 .DS_Store
+
+.gradle/
+local.properties
