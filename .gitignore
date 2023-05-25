@@ -104,3 +104,5 @@ env-vars.sh
 BitcoinComWallet/GeneratedSecret.swift
 
 android/app/build
+
+.DS_Store
