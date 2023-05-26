@@ -1,3 +1,15 @@
+## How to add or remove assets
+
+Steps:
+
+- make changes (add / delete) on buyassets' json files.
+- run this command to reflect the changes on iOS assets resource.
+
+```
+sh scripts/copy-resource.sh
+```
+- create PR with changes. should include changes for buyassets and ios/Resources/buyassets
+
 ## Moonpay, Simplex, Banxa buyable assets
 
 ### Moonpay
