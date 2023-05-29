@@ -114,7 +114,7 @@
         },
         {
             "currency_code": "MATIC",
-            "asset_id": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+            "asset_id": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
             "ios_blockchain": "ETH",
             "ios_asset_protocol": "ERC20",
             "android_blockchain": "ETH_BLOCKCHAIN",
