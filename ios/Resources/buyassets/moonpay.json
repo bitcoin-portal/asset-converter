@@ -57,6 +57,14 @@
             "android_asset_protocol": "BTC_PROTOCOL"
         },
         {
+            "currency_code": "BNB_BSC",
+            "asset_id": "BNB",
+            "ios_blockchain": "BNB",
+            "ios_asset_protocol": "BNB",
+            "android_blockchain": "BNB_BLOCKCHAIN",
+            "android_asset_protocol": "BNB_PROTOCOL"
+        },
+        {
             "currency_code": "CHZ",
             "asset_id": "0x3506424F91fD33084466F402d5D97f05F8e3b4AF",
             "ios_blockchain": "ETH",
