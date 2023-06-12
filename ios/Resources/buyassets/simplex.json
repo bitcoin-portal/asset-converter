@@ -41,7 +41,7 @@
             "android_asset_protocol": "MATIC_PROTOCOL"
         },
         {
-            "currency_code": "BNB",
+            "currency_code": "BNB-SC",
             "asset_id": "BNB",
             "ios_blockchain": "BNB",
             "ios_asset_protocol": "BNB",

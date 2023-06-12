@@ -65,6 +65,14 @@
             "android_asset_protocol": "AVAX_PROTOCOL"
         },
         {
+            "compound_key": "BNB-BSC",
+            "asset_id": "BNB",
+            "ios_blockchain": "BNB",
+            "ios_asset_protocol": "BNB",
+            "android_blockchain": "BNB_BLOCKCHAIN",
+            "android_asset_protocol": "BNB_PROTOCOL"
+        },
+        {
             "compound_key": "LINK-ETH",
             "asset_id": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
             "ios_blockchain": "ETH",
