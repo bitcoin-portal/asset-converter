@@ -21,8 +21,8 @@
             "asset_id": "AVAX",
             "ios_blockchain": "AVAX",
             "ios_asset_protocol": "AVAX",
-            "android_blockchain": "ETH_BLOCKCHAIN",
-            "android_asset_protocol": "ERC_20_PROTOCOL"
+            "android_blockchain": "AVAX_BLOCKCHAIN",
+            "android_asset_protocol": "AVAX_PROTOCOL"
         },
         {
             "currency_code": "AXS",
