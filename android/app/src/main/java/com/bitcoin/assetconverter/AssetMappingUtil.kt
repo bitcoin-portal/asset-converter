@@ -20,9 +20,9 @@ class AssetMappingUtil {
                 BanxaAssetMapping::class.java -> {
                     return try {
                         val assetManager = context.assets
-                        val inputStream = assetManager.open("banxa.json")
-                        val assetMapping = json.decodeFromStream<BanxaAssetMapping>(inputStream)
-                        assetMapping as T
+                        assetManager.open("banxa.json").use {
+                            return@use json.decodeFromStream<BanxaAssetMapping>(it) as T
+                        }
                     }catch (e: Exception) {
                         throw e
                     }
@@ -32,6 +32,7 @@ class AssetMappingUtil {
                         val assetManager = context.assets
                         val inputStream = assetManager.open("moonpay.json")
                         val assetMapping = json.decodeFromStream<MoonpayAssetMapping>(inputStream)
+                        inputStream.close()
                         assetMapping as T
                     }catch (e: Exception) {
                         throw e
@@ -42,6 +43,7 @@ class AssetMappingUtil {
                         val assetManager = context.assets
                         val inputStream = assetManager.open("simplex.json")
                         val assetMapping = json.decodeFromStream<SimplexAssetMapping>(inputStream)
+                        inputStream.close()
                         assetMapping as T
                     }catch (e: Exception) {
                         throw e
