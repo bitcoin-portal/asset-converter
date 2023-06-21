@@ -30,10 +30,9 @@ class AssetMappingUtil {
                 MoonpayAssetMapping::class.java -> {
                     return try {
                         val assetManager = context.assets
-                        val inputStream = assetManager.open("moonpay.json")
-                        val assetMapping = json.decodeFromStream<MoonpayAssetMapping>(inputStream)
-                        inputStream.close()
-                        assetMapping as T
+                        assetManager.open("moonpay.json").use {
+                            json.decodeFromStream<MoonpayAssetMapping>(it) as T
+                        }
                     }catch (e: Exception) {
                         throw e
                     }
@@ -41,10 +40,9 @@ class AssetMappingUtil {
                 SimplexAssetMapping::class.java -> {
                     return try {
                         val assetManager = context.assets
-                        val inputStream = assetManager.open("simplex.json")
-                        val assetMapping = json.decodeFromStream<SimplexAssetMapping>(inputStream)
-                        inputStream.close()
-                        assetMapping as T
+                        assetManager.open("simplex.json").use {
+                            json.decodeFromStream<SimplexAssetMapping>(it) as T
+                        }
                     }catch (e: Exception) {
                         throw e
                     }
