@@ -21,7 +21,7 @@ class AssetMappingUtil {
                     return try {
                         val assetManager = context.assets
                         assetManager.open("banxa.json").use {
-                            return@use json.decodeFromStream<BanxaAssetMapping>(it) as T
+                            json.decodeFromStream<BanxaAssetMapping>(it) as T
                         }
                     }catch (e: Exception) {
                         throw e
