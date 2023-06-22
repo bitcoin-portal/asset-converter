@@ -15,41 +15,26 @@ class AssetMappingUtil {
 
         @OptIn(ExperimentalSerializationApi::class)
         inline fun <reified T: AssetMapping> getBuyAssets(context: Context): T? {
+            val assetManager = context.assets
             val json = Json { ignoreUnknownKeys = true }
-            when(T::class.java) {
+            return when(T::class.java) {
                 BanxaAssetMapping::class.java -> {
-                    return try {
-                        val assetManager = context.assets
                         assetManager.open("banxa.json").use {
                             json.decodeFromStream<BanxaAssetMapping>(it) as T
                         }
-                    }catch (e: Exception) {
-                        throw e
-                    }
                 }
                 MoonpayAssetMapping::class.java -> {
-                    return try {
-                        val assetManager = context.assets
                         assetManager.open("moonpay.json").use {
                             json.decodeFromStream<MoonpayAssetMapping>(it) as T
                         }
-                    }catch (e: Exception) {
-                        throw e
-                    }
                 }
                 SimplexAssetMapping::class.java -> {
-                    return try {
-                        val assetManager = context.assets
                         assetManager.open("simplex.json").use {
                             json.decodeFromStream<SimplexAssetMapping>(it) as T
                         }
-                    }catch (e: Exception) {
-                        throw e
-                    }
                 }
+                else -> null
             }
-
-            return  null
         }
     }
 }

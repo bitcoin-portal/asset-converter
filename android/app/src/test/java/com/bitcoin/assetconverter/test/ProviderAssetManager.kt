@@ -14,8 +14,7 @@ class ProviderAssetManager: BaseTest() {
     @Test
     fun testProviderAssetManagerBanxas(){
         val legacyMapping = AssetMappingUtil.getBuyAssets<BanxaAssetMapping>(context)
-        val assetManager = ProviderAssetManager()
-        assetManager.initialize(context)
+        val assetManager = ProviderAssetManager(context)
         val banxaAsset = assetManager.getAssets(ProviderType.BANXAS)
         Assert.assertEquals(legacyMapping?.assets?.size ?: 0, banxaAsset.size)
     }
@@ -23,8 +22,7 @@ class ProviderAssetManager: BaseTest() {
     @Test
     fun testProviderAssetManagerMoonpay(){
         val legacyMapping = AssetMappingUtil.getBuyAssets<MoonpayAssetMapping>(context)
-        val assetManager = ProviderAssetManager()
-        assetManager.initialize(context)
+        val assetManager = ProviderAssetManager(context)
         val moonpayAssets = assetManager.getAssets(ProviderType.MOONPAY)
         Assert.assertEquals(legacyMapping?.assets?.size ?: 0, moonpayAssets.size)
 
@@ -33,8 +31,7 @@ class ProviderAssetManager: BaseTest() {
     @Test
     fun testProviderAssetManagerSimplex(){
         val legacyMapping = AssetMappingUtil.getBuyAssets<SimplexAssetMapping>(context)
-        val assetManager = ProviderAssetManager()
-        assetManager.initialize(context)
+        val assetManager = ProviderAssetManager(context)
         val simplexAssets = assetManager.getAssets(ProviderType.SIMPLEX)
         Assert.assertEquals(legacyMapping?.assets?.size ?: 0, simplexAssets.size)
 
