@@ -15,41 +15,26 @@ class AssetMappingUtil {
 
         @OptIn(ExperimentalSerializationApi::class)
         inline fun <reified T: AssetMapping> getBuyAssets(context: Context): T? {
+            val assetManager = context.assets
             val json = Json { ignoreUnknownKeys = true }
-            when(T::class.java) {
+            return when(T::class.java) {
                 BanxaAssetMapping::class.java -> {
-                    return try {
-                        val assetManager = context.assets
-                        val inputStream = assetManager.open("banxa.json")
-                        val assetMapping = json.decodeFromStream<BanxaAssetMapping>(inputStream)
-                        assetMapping as T
-                    }catch (e: Exception) {
-                        throw e
-                    }
+                        assetManager.open("banxa.json").use {
+                            json.decodeFromStream<BanxaAssetMapping>(it) as T
+                        }
                 }
                 MoonpayAssetMapping::class.java -> {
-                    return try {
-                        val assetManager = context.assets
-                        val inputStream = assetManager.open("moonpay.json")
-                        val assetMapping = json.decodeFromStream<MoonpayAssetMapping>(inputStream)
-                        assetMapping as T
-                    }catch (e: Exception) {
-                        throw e
-                    }
+                        assetManager.open("moonpay.json").use {
+                            json.decodeFromStream<MoonpayAssetMapping>(it) as T
+                        }
                 }
                 SimplexAssetMapping::class.java -> {
-                    return try {
-                        val assetManager = context.assets
-                        val inputStream = assetManager.open("simplex.json")
-                        val assetMapping = json.decodeFromStream<SimplexAssetMapping>(inputStream)
-                        assetMapping as T
-                    }catch (e: Exception) {
-                        throw e
-                    }
+                        assetManager.open("simplex.json").use {
+                            json.decodeFromStream<SimplexAssetMapping>(it) as T
+                        }
                 }
+                else -> null
             }
-
-            return  null
         }
     }
 }
