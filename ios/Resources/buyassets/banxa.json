@@ -25,6 +25,14 @@
             "android_asset_protocol": "ERC_20_PROTOCOL"
         },
         {
+            "compound_key": "USDT-MATIC",
+            "asset_id": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+            "ios_blockchain": "MATIC",
+            "ios_asset_protocol": "ERC20",
+            "android_blockchain": "MATIC_BLOCKCHAIN",
+            "android_asset_protocol": "ERC_20_PROTOCOL"
+        },
+        {
             "compound_key": "USDC-ETH",
             "asset_id": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
             "ios_blockchain": "ETH",
