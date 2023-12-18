@@ -17,6 +17,8 @@ public final class AssetInteractor: AssetInteractorProtocol {
     /// Dictionary data format Provider:  [ AssetIdV2: ProviderAsset].
     private var reverseproviderAssetTo = [Provider: [String: String]]()
 
+    public init() {}
+
     public func getAssetList(provider: Provider) -> [String] {
         let cachedAssets = providerAssetTo[provider]
         guard cachedAssets == nil else {
