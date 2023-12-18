@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol AssetInteractorProtocol {
+public protocol AssetConverterInteractorProtocol {
     /// Get list of assetIdV2 compound keys.
     func getAssetList(provider: Provider) -> [String]
     /// Get provider specific compound key from assetIdV2 compound key.
@@ -11,7 +11,7 @@ public protocol AssetInteractorProtocol {
     func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> String?
 }
 
-public final class AssetInteractor: AssetInteractorProtocol {
+public final class AssetConverterInteractor: AssetConverterInteractorProtocol {
     /// Dictionary data format Provider:  [ProviderAsset: AssetIdV2].
     private var providerAssetTo = [Provider: [String: String]]()
     /// Dictionary data format Provider:  [ AssetIdV2: ProviderAsset].

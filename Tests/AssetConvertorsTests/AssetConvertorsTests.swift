@@ -1,15 +1,16 @@
 //
 //  AssetConvertersTests.swift
-//  
+//
 //
 //  Created by Nhat Dinh on 2023/05/15.
 //
 
 import XCTest
+
 @testable import AssetConvertors
 
 final class AssetConvertersTests: XCTestCase {
-    let sut = AssetInteractor()
+    let sut = AssetConverterInteractor()
 
     func testCanGetAssetList() {
         XCTAssertFalse(sut.getAssetList(provider: .banxa).isEmpty)
