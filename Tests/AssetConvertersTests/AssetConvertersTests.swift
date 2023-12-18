@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import AssetConvertors
+@testable import AssetConverters
 
 final class AssetConvertersTests: XCTestCase {
     let sut = AssetConverterInteractor()
