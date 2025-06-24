@@ -29,5 +29,9 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ETH-ERC20-0x249cA82617eC3DfB2589c4c17ab7EC9765350a18", provider: .banxa), "VERSE-ETH")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ETH-ERC20-0x249cA82617eC3DfB2589c4c17ab7EC9765350a18", provider: .moonpay), "VERSE")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ETH-ERC20-0x249cA82617eC3DfB2589c4c17ab7EC9765350a18", provider: .simplex), nil)
+        
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "eth-erc20-0x249ca82617ec3dfb2589c4c17ab7ec9765350a18", provider: .banxa), "VERSE-ETH")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "eth-erc20-0x249ca82617ec3dfb2589c4c17ab7ec9765350a18", provider: .moonpay), "VERSE")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "eth-erc20-0x249ca82617ec3dfb2589c4c17ab7ec9765350a18", provider: .simplex), nil)
     }
 }
