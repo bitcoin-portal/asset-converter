@@ -55,7 +55,7 @@ public final class AssetConverterInteractor: AssetConverterInteractorProtocol {
             cachedAssets = providerAssetTo[provider]
         }
         for (key, value) in cachedAssets ?? [:] {
-            reverseAssetList[value] = key
+            reverseAssetList[value.lowercased()] = key
         }
         reverseproviderAssetTo[provider] = reverseAssetList
         return reverseAssetList[lowercasedAssetIdV2]
