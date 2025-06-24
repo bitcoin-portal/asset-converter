@@ -43,9 +43,10 @@ public final class AssetConverterInteractor: AssetConverterInteractorProtocol {
     }
 
     public func convertAssetIdV2ToProviderAsset(assetIdV2: String, provider: Provider) -> String? {
+        let lowercasedAssetIdV2 = assetIdV2.lowercased()
         let cachedData = reverseproviderAssetTo[provider]
         guard cachedData == nil else {
-            return cachedData?[assetIdV2]
+            return cachedData?[lowercasedAssetIdV2]
         }
         var reverseAssetList = [String: String]()
         var cachedAssets = providerAssetTo[provider]
@@ -57,7 +58,7 @@ public final class AssetConverterInteractor: AssetConverterInteractorProtocol {
             reverseAssetList[value] = key
         }
         reverseproviderAssetTo[provider] = reverseAssetList
-        return reverseAssetList[assetIdV2]
+        return reverseAssetList[lowercasedAssetIdV2]
     }
 
     private func loadAssetList(provider: Provider) -> [String: String]? {
