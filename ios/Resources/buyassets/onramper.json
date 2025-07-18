@@ -311,6 +311,14 @@
             "ios_asset_protocol": "ERC20",
             "android_blockchain": "ETH_BLOCKCHAIN",
             "android_asset_protocol": "ERC_20_PROTOCOL"
+        },
+        {
+            "currency_code": "xlm_stellar",
+            "asset_id": "XLM",
+            "ios_blockchain": "XLM",
+            "ios_asset_protocol": "XLM",
+            "android_blockchain": "XLM_BLOCKCHAIN",
+            "android_asset_protocol": "XLM_PROTOCOL"
         }
     ]
 }
