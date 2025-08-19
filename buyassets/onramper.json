@@ -326,7 +326,7 @@
             "ios_blockchain": "XLM",
             "ios_asset_protocol": "XLM_TOKEN",
             "android_blockchain": "XLM_BLOCKCHAIN",
-            "android_asset_protocol": "XLM_PROTOCOL"
+            "android_asset_protocol": "XLM_TOKEN"
         }
     ]
 }
