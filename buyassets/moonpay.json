@@ -319,6 +319,14 @@
             "ios_asset_protocol": "XLM",
             "android_blockchain": "XLM_BLOCKCHAIN",
             "android_asset_protocol": "XLM_PROTOCOL"
+        },
+        {
+            "currency_code": "USDC_XLM",
+            "asset_id": "USDC-GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+            "ios_blockchain": "XLM",
+            "ios_asset_protocol": "XLM_TOKEN",
+            "android_blockchain": "XLM_BLOCKCHAIN",
+            "android_asset_protocol": "XLM_TOKEN_PROTOCOL"
         }
     ]
 }
