@@ -327,6 +327,14 @@
             "ios_asset_protocol": "XLM_TOKEN",
             "android_blockchain": "XLM_BLOCKCHAIN",
             "android_asset_protocol": "XLM_TOKEN_PROTOCOL"
+        },
+        {
+            "currency_code": "CCD",
+            "asset_id": "CCD",
+            "ios_blockchain": "CCD",
+            "ios_asset_protocol": "CCD",
+            "android_blockchain": "CCD_BLOCKCHAIN",
+            "android_asset_protocol": "CCD_PROTOCOL"
         }
     ]
 }
