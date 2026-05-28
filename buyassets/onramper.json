@@ -340,7 +340,7 @@
             "compound_key": "sol",
             "asset_id": "SOL",
             "ios_blockchain": "SOL",
-            "ios_asset_protocol": "native",
+            "ios_asset_protocol": "SOL",
             "android_blockchain": "SOL_BLOCKCHAIN",
             "android_asset_protocol": "SOL_PROTOCOL"
         }
