@@ -71,7 +71,7 @@
             "ios_asset_protocol": "ERC20",
             "android_blockchain": "ETH_BLOCKCHAIN",
             "android_asset_protocol": "ERC_20_PROTOCOL"
-        },       
+        },
         {
             "currency_code": "COMP",
             "asset_id": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
@@ -335,6 +335,14 @@
             "ios_asset_protocol": "CCD",
             "android_blockchain": "CCD_BLOCKCHAIN",
             "android_asset_protocol": "CCD_PROTOCOL"
+        },
+        {
+            "currency_code": "SOL",
+            "asset_id": "SOL",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SOL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SOL_PROTOCOL"
         }
     ]
 }
