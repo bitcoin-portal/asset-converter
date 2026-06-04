@@ -1,6 +1,22 @@
 {
     "assets": [
         {
+            "compound_key": "ETH-BASE",
+            "asset_id": "ETH",
+            "ios_blockchain": "BASE",
+            "ios_asset_protocol": "ETH",
+            "android_blockchain": "BASE_BLOCKCHAIN",
+            "android_asset_protocol": "ETH_PROTOCOL"
+        },
+        {
+            "compound_key": "USDC-BASE",
+            "asset_id": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "ios_blockchain": "BASE",
+            "ios_asset_protocol": "ERC20",
+            "android_blockchain": "BASE_BLOCKCHAIN",
+            "android_asset_protocol": "ERC_20_PROTOCOL"
+        },
+        {
             "compound_key": "BTC-BTC",
             "asset_id": "BTC",
             "ios_blockchain": "BTC",

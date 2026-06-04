@@ -1,6 +1,22 @@
 {
     "assets": [
         {
+            "currency_code": "ETH_BASE",
+            "asset_id": "ETH",
+            "ios_blockchain": "BASE",
+            "ios_asset_protocol": "ETH",
+            "android_blockchain": "BASE_BLOCKCHAIN",
+            "android_asset_protocol": "ETH_PROTOCOL"
+        },
+        {
+            "currency_code": "USDC_BASE",
+            "asset_id": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "ios_blockchain": "BASE",
+            "ios_asset_protocol": "ERC20",
+            "android_blockchain": "BASE_BLOCKCHAIN",
+            "android_asset_protocol": "ERC_20_PROTOCOL"
+        },
+        {
             "currency_code": "AAVE",
             "asset_id": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
             "ios_blockchain": "ETH",
