@@ -351,6 +351,14 @@
             "ios_asset_protocol": "CCD",
             "android_blockchain": "CCD_BLOCKCHAIN",
             "android_asset_protocol": "CCD_PROTOCOL"
+        },
+        {
+            "currency_code": "SOL",
+            "asset_id": "SOL",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SOL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SOL_PROTOCOL"
         }
     ]
 }

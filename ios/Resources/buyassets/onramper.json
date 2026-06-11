@@ -327,6 +327,14 @@
             "ios_asset_protocol": "XLM_TOKEN",
             "android_blockchain": "XLM_BLOCKCHAIN",
             "android_asset_protocol": "XLM_TOKEN_PROTOCOL"
+        },
+        {
+            "compound_key": "sol",
+            "asset_id": "SOL",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SOL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SOL_PROTOCOL"
         }
     ]
 }
