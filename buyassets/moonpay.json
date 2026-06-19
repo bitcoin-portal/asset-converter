@@ -359,6 +359,86 @@
             "ios_asset_protocol": "SOL",
             "android_blockchain": "SOL_BLOCKCHAIN",
             "android_asset_protocol": "SOL_PROTOCOL"
+        },
+        {
+            "currency_code": "BONK_SOL",
+            "asset_id": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "CASH_SOL",
+            "asset_id": "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "JUP_SOL",
+            "asset_id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "PENGU_SOL",
+            "asset_id": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "PYUSD_SOL",
+            "asset_id": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "TRUMP_SOL",
+            "asset_id": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "USDC_SOL",
+            "asset_id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "USDT_SOL",
+            "asset_id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "VINE_SOL",
+            "asset_id": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "XO_SOL",
+            "asset_id": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+            "ios_blockchain": "SOL",
+            "ios_asset_protocol": "SPL",
+            "android_blockchain": "SOL_BLOCKCHAIN",
+            "android_asset_protocol": "SPL_PROTOCOL"
         }
     ]
 }
