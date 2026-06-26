@@ -346,7 +346,7 @@
         },
         {
             "compound_key": "srm_solana",
-            "asset_id": "SRM",
+            "asset_id": "SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -354,7 +354,7 @@
         },
         {
             "compound_key": "usdc_solana",
-            "asset_id": "USDC",
+            "asset_id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -362,7 +362,7 @@
         },
         {
             "compound_key": "usdt_solana",
-            "asset_id": "USDT",
+            "asset_id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -370,7 +370,7 @@
         },
         {
             "compound_key": "fida_solana",
-            "asset_id": "FIDA",
+            "asset_id": "EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -386,7 +386,7 @@
         },
         {
             "compound_key": "gmt_solana",
-            "asset_id": "GMT",
+            "asset_id": "7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -394,7 +394,7 @@
         },
         {
             "compound_key": "gst_solana",
-            "asset_id": "GST",
+            "asset_id": "AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -402,7 +402,7 @@
         },
         {
             "compound_key": "ray_solana",
-            "asset_id": "RAY",
+            "asset_id": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -410,7 +410,7 @@
         },
         {
             "compound_key": "axset_solana",
-            "asset_id": "AXSet",
+            "asset_id": "HysWcbHiYY9888pHbaqhwLYZQeZrcQMXKQWRqS7zcPK5",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -418,7 +418,7 @@
         },
         {
             "compound_key": "sand_solana",
-            "asset_id": "SAND",
+            "asset_id": "49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -426,7 +426,7 @@
         },
         {
             "compound_key": "taki_solana",
-            "asset_id": "TAKI",
+            "asset_id": "Taki7fi3Zicv7Du1xNAWLaf6mRK7ikdn77HeGzgwvo4",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -434,7 +434,7 @@
         },
         {
             "compound_key": "quick_solana",
-            "asset_id": "QUICK",
+            "asset_id": "5njTmK53Ss5jkiHHZvzabVzZj6ztu6WYWpAPYgbVnbjs",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -442,7 +442,7 @@
         },
         {
             "compound_key": "isc_solana",
-            "asset_id": "ISC",
+            "asset_id": "J9BcrQfX4p9D1bvLzRNCbMDv8f44a9LFdeqNE4Yk2WMD",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -450,7 +450,7 @@
         },
         {
             "compound_key": "c98_solana",
-            "asset_id": "C98",
+            "asset_id": "C98A4nkJXhpVZNAZdHUA95RpTF3T4whtQubL3YobiUX9",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -458,15 +458,7 @@
         },
         {
             "compound_key": "grt_solana",
-            "asset_id": "GRT",
-            "ios_blockchain": "SOL",
-            "ios_asset_protocol": "SPL",
-            "android_blockchain": "SOL_BLOCKCHAIN",
-            "android_asset_protocol": "SPL_PROTOCOL"
-        },
-        {
-            "compound_key": "btc_solana",
-            "asset_id": "BTC",
+            "asset_id": "HGsLG4PnZ28L8A4R5nPqKgZd86zUUdmfnkTRnuFJ5dAX",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -474,15 +466,7 @@
         },
         {
             "compound_key": "avax_solana",
-            "asset_id": "AVAX",
-            "ios_blockchain": "SOL",
-            "ios_asset_protocol": "SPL",
-            "android_blockchain": "SOL_BLOCKCHAIN",
-            "android_asset_protocol": "SPL_PROTOCOL"
-        },
-        {
-            "compound_key": "eth_solana",
-            "asset_id": "ETH",
+            "asset_id": "AUrMpCDYYcPuHhyNX8gEEqbmDPFUpBpHrNW3vPeCFn5Z",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -490,7 +474,7 @@
         },
         {
             "compound_key": "doge_solana",
-            "asset_id": "DOGE",
+            "asset_id": "3ZEbVJPUmwsL6FbbbZWLXkrtGkN8xxcJdy2JfzNiVrdU",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -498,7 +482,7 @@
         },
         {
             "compound_key": "bonk_solana",
-            "asset_id": "BONK",
+            "asset_id": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -506,7 +490,7 @@
         },
         {
             "compound_key": "pyusd_solana",
-            "asset_id": "PYUSD",
+            "asset_id": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -514,7 +498,7 @@
         },
         {
             "compound_key": "barsik_solana",
-            "asset_id": "BARSIK",
+            "asset_id": "7ZqzGzTNg5tjK1CHTBdGFHyKjBtXdfvAobuGgdt4pump",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -522,7 +506,7 @@
         },
         {
             "compound_key": "trump_solana",
-            "asset_id": "TRUMP",
+            "asset_id": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -530,7 +514,7 @@
         },
         {
             "compound_key": "melania_solana",
-            "asset_id": "MELANIA",
+            "asset_id": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
@@ -538,7 +522,7 @@
         },
         {
             "compound_key": "usd1_solana",
-            "asset_id": "USD1",
+            "asset_id": "USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB",
             "ios_blockchain": "SOL",
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
