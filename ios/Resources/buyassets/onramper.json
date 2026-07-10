@@ -17,6 +17,14 @@
             "android_asset_protocol": "ETH_PROTOCOL"
         },
         {
+            "compound_key": "eth_base",
+            "asset_id": "ETH",
+            "ios_blockchain": "BASE",
+            "ios_asset_protocol": "ETH",
+            "android_blockchain": "BASE_BLOCKCHAIN",
+            "android_asset_protocol": "ETH_PROTOCOL"
+        },
+        {
             "compound_key": "usdt_ethereum",
             "asset_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
             "ios_blockchain": "ETH",
