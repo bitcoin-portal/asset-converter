@@ -20,7 +20,7 @@
             "compound_key": "eth_base",
             "asset_id": "ETH",
             "ios_blockchain": "BASE",
-            "ios_asset_protocol": "BASE",
+            "ios_asset_protocol": "ETH",
             "android_blockchain": "BASE_BLOCKCHAIN",
             "android_asset_protocol": "ETH_PROTOCOL"
         },
