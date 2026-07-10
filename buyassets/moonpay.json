@@ -6,7 +6,7 @@
             "ios_blockchain": "BASE",
             "ios_asset_protocol": "ETH",
             "android_blockchain": "BASE_BLOCKCHAIN",
-            "android_asset_protocol": "ETH_PROTOCOL"
+            "android_asset_protocol": "BASE_PROTOCOL"
         },
         {
             "currency_code": "USDC_BASE",
