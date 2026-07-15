@@ -87,7 +87,7 @@
             "ios_asset_protocol": "ERC20",
             "android_blockchain": "ETH_BLOCKCHAIN",
             "android_asset_protocol": "ERC_20_PROTOCOL"
-        },       
+        },
         {
             "currency_code": "COMP",
             "asset_id": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
@@ -439,6 +439,22 @@
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
             "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "currency_code": "TRX",
+            "asset_id": "TRX",
+            "ios_blockchain": "TRX",
+            "ios_asset_protocol": "TRX",
+            "android_blockchain": "TRX_BLOCKCHAIN",
+            "android_asset_protocol": "TRX_PROTOCOL"
+        },
+        {
+            "currency_code": "USDT_TRX",
+            "asset_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "ios_blockchain": "TRX",
+            "ios_asset_protocol": "TRC20",
+            "android_blockchain": "TRX_BLOCKCHAIN",
+            "android_asset_protocol": "TRC_20_PROTOCOL"
         }
     ]
 }
