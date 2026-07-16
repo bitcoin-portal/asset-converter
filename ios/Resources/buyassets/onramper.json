@@ -337,6 +337,14 @@
             "android_asset_protocol": "XLM_TOKEN_PROTOCOL"
         },
         {
+            "currency_code": "CCD",
+            "asset_id": "CCD",
+            "ios_blockchain": "CCD",
+            "ios_asset_protocol": "CCD",
+            "android_blockchain": "CCD_BLOCKCHAIN",
+            "android_asset_protocol": "CCD_PROTOCOL"
+        },
+        {
             "compound_key": "sol",
             "asset_id": "SOL",
             "ios_blockchain": "SOL",
@@ -527,6 +535,22 @@
             "ios_asset_protocol": "SPL",
             "android_blockchain": "SOL_BLOCKCHAIN",
             "android_asset_protocol": "SPL_PROTOCOL"
+        },
+        {
+            "compound_key": "trx",
+            "asset_id": "TRX",
+            "ios_blockchain": "TRX",
+            "ios_asset_protocol": "TRX",
+            "android_blockchain": "TRX_BLOCKCHAIN",
+            "android_asset_protocol": "TRX_PROTOCOL"
+        },
+        {
+            "compound_key": "usdt_tron",
+            "asset_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+            "ios_blockchain": "TRX",
+            "ios_asset_protocol": "TRC20",
+            "android_blockchain": "TRX_BLOCKCHAIN",
+            "android_asset_protocol": "TRC_20_PROTOCOL"
         }
     ]
 }
