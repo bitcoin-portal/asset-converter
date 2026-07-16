@@ -9,7 +9,7 @@ Steps:
 sh scripts/copy-resource.sh
 ```
 - create PR with changes. should include changes for buyassets and ios/Resources/buyassets
-- bump up version to match next tag in [build.gradle](https://github.com/bitcoin-portal/asset-converter/blob/trunk/android/app/build.gradle#L8)
+- after the PR merges, cut the next version tag on trunk — the library is versioned by git tags (JitPack); there is no in-repo version field
 
 ## Moonpay, Simplex, Banxa buyable assets
 
