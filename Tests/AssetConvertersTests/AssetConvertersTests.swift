@@ -46,4 +46,14 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "BASE-ETH-ETH", provider: .banxa), "ETH-BASE")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "BASE-ETH-ETH", provider: .moonpay), "ETH_BASE")
     }
+
+    func testCanConvertArbitrumProviderAssetToAssetIdV2() {
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "ETH_ARBITRUM", provider: .moonpay), "ARB1-ETH-ETH")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "eth_arbitrum", provider: .onramper), "ARB1-ETH-ETH")
+    }
+
+    func testCanConvertArbitrumAssetIdV2ToProviderAsset() {
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ETH-ETH", provider: .moonpay), "ETH_ARBITRUM")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ETH-ETH", provider: .onramper), "eth_arbitrum")
+    }
 }
