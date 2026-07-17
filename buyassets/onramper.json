@@ -541,7 +541,7 @@
             "asset_id": "TRX",
             "ios_blockchain": "TRX",
             "ios_asset_protocol": "TRX",
-            "android_blockchain": "TRX_BLOCKCHAIN",
+            "android_blockchain": "TRON_BLOCKCHAIN",
             "android_asset_protocol": "TRX_PROTOCOL"
         },
         {
@@ -549,7 +549,7 @@
             "asset_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
             "ios_blockchain": "TRX",
             "ios_asset_protocol": "TRC20",
-            "android_blockchain": "TRX_BLOCKCHAIN",
+            "android_blockchain": "TRON_BLOCKCHAIN",
             "android_asset_protocol": "TRC_20_PROTOCOL"
         }
     ]
