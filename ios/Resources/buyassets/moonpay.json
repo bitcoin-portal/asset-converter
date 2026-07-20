@@ -1,6 +1,14 @@
 {
     "assets": [
         {
+            "currency_code": "ETH_ARBITRUM",
+            "asset_id": "ETH",
+            "ios_blockchain": "ARB1",
+            "ios_asset_protocol": "ETH",
+            "android_blockchain": "ARB1_BLOCKCHAIN",
+            "android_asset_protocol": "ETH_PROTOCOL"
+        },
+        {
             "currency_code": "ETH_BASE",
             "asset_id": "ETH",
             "ios_blockchain": "BASE",
