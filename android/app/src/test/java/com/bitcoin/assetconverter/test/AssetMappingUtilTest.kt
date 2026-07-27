@@ -23,6 +23,26 @@ class AssetMappingUtilTest: BaseTest() {
     }
 
     @Test
+    fun testMoonpayArbitrumUsesAndroidAssetOverride() {
+        val mapping = AssetMappingUtil.getBuyAssets<MoonpayAssetMapping>(context)
+        val asset = mapping?.assets?.first { it.currencyCode == "ETH_ARBITRUM" }
+
+        assertEquals("ARBITRUM", asset?.assetId)
+        assertEquals("ARB1_BLOCKCHAIN", asset?.blockchain)
+        assertEquals("ARB1_PROTOCOL", asset?.assetProtocol)
+    }
+
+    @Test
+    fun testMoonpayAssetWithoutAndroidOverrideUsesAssetId() {
+        val mapping = AssetMappingUtil.getBuyAssets<MoonpayAssetMapping>(context)
+        val asset = mapping?.assets?.first { it.currencyCode == "ETH_BASE" }
+
+        assertEquals("ETH", asset?.assetId)
+        assertEquals("BASE_BLOCKCHAIN", asset?.blockchain)
+        assertEquals("ETH_PROTOCOL", asset?.assetProtocol)
+    }
+
+    @Test
     fun testBanxasAssetMapping() {
         val mapping = AssetMappingUtil.getBuyAssets<BanxaAssetMapping>(context)
         assertFalse(mapping?.assets.isNullOrEmpty())
@@ -32,6 +52,7 @@ class AssetMappingUtilTest: BaseTest() {
         const val BANXAS = "banxa.json"
         const val MOONPAY = "moonpay.json"
         const val SIMPLEX = "simplex.json"
+        const val ONRAMPER = "onramper.json"
     }
 
 }

@@ -1,6 +1,7 @@
 package com.bitcoin.assetconverter.models
 
 import kotlinx.serialization.ExperimentalSerializationApi
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames
 
@@ -11,7 +12,7 @@ data class ProviderAssets(val assets: List<Assets>) {
     @Serializable
     data class Assets(
         @JsonNames("compound_key", "currency_code") val providerKey: String,
-        @JsonNames("asset_id") val assetId: String,
+        @SerialName("android_asset_id") @JsonNames("asset_id") val assetId: String,
         @JsonNames("android_blockchain") val blockchain: String,
         @JsonNames("android_asset_protocol") val assetProtocol: String
     )

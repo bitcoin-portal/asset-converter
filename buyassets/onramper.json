@@ -3,10 +3,11 @@
         {
             "compound_key": "eth_arbitrum",
             "asset_id": "ETH",
+            "android_asset_id": "ARBITRUM",
             "ios_blockchain": "ARB1",
             "ios_asset_protocol": "ETH",
             "android_blockchain": "ARB1_BLOCKCHAIN",
-            "android_asset_protocol": "ETH_PROTOCOL"
+            "android_asset_protocol": "ARB1_PROTOCOL"
         },
         {
             "compound_key": "btc",
