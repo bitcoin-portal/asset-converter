@@ -545,7 +545,7 @@
             "android_asset_protocol": "SPL_PROTOCOL"
         },
         {
-            "compound_key": "trx",
+            "compound_key": "trx_tron",
             "asset_id": "TRX",
             "ios_blockchain": "TRX",
             "ios_asset_protocol": "TRX",

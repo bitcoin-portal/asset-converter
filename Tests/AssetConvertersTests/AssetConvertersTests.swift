@@ -56,4 +56,19 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ETH-ETH", provider: .moonpay), "ETH_ARBITRUM")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ETH-ETH", provider: .onramper), "eth_arbitrum")
     }
+
+    // Onramper's ID for native TRON is `trx_tron`, not `trx` (MTDB-26637). The wallet feeds this
+    // value straight into the widget's `defaultCrypto`, `onlyCryptos` and `wallets=<id>:<addr>`
+    // params, so a wrong ID leaves the widget with nothing selectable at all.
+    func testCanConvertTronProviderAssetToAssetIdV2() {
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "trx_tron", provider: .onramper), "TRX-TRX-TRX")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "usdt_tron", provider: .onramper), "TRX-TRC20-TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "TRX", provider: .moonpay), "TRX-TRX-TRX")
+    }
+
+    func testCanConvertTronAssetIdV2ToProviderAsset() {
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "TRX-TRX-TRX", provider: .onramper), "trx_tron")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "TRX-TRC20-TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", provider: .onramper), "usdt_tron")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "TRX-TRX-TRX", provider: .moonpay), "TRX")
+    }
 }
