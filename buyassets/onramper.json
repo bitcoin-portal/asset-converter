@@ -9,6 +9,14 @@
             "android_asset_protocol": "ETH_PROTOCOL"
         },
         {
+            "compound_key": "usdc_arbitrum",
+            "asset_id": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+            "ios_blockchain": "ARB1",
+            "ios_asset_protocol": "ERC20",
+            "android_blockchain": "ARB1_BLOCKCHAIN",
+            "android_asset_protocol": "ERC_20_PROTOCOL"
+        },
+        {
             "compound_key": "btc",
             "asset_id": "BTC",
             "ios_blockchain": "BTC",
