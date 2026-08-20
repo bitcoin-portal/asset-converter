@@ -18,7 +18,7 @@
         },
         {
             "currency_code": "USDT_ARBITRUM",
-            "asset_id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+            "asset_id": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
             "ios_blockchain": "ARB1",
             "ios_asset_protocol": "ERC20",
             "android_blockchain": "ARB1_BLOCKCHAIN",
