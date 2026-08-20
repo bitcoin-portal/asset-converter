@@ -50,11 +50,17 @@ final class AssetConvertersTests: XCTestCase {
     func testCanConvertArbitrumProviderAssetToAssetIdV2() {
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "ETH_ARBITRUM", provider: .moonpay), "ARB1-ETH-ETH")
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "eth_arbitrum", provider: .onramper), "ARB1-ETH-ETH")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "USDC_ARBITRUM", provider: .moonpay), "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "usdc_arbitrum", provider: .onramper), "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831")
     }
 
     func testCanConvertArbitrumAssetIdV2ToProviderAsset() {
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ETH-ETH", provider: .moonpay), "ETH_ARBITRUM")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ETH-ETH", provider: .onramper), "eth_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831", provider: .moonpay), "USDC_ARBITRUM")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831", provider: .onramper), "usdc_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xaf88d065e77c8cc2239327c5edb3a432268e5831", provider: .moonpay), "USDC_ARBITRUM")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xaf88d065e77c8cc2239327c5edb3a432268e5831", provider: .onramper), "usdc_arbitrum")
     }
 
     // Onramper's ID for native TRON is `trx_tron`, not `trx` (MTDB-26637). The wallet feeds this
