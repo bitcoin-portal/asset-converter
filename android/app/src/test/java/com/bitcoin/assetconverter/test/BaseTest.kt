@@ -33,6 +33,9 @@ open class BaseTest {
         every { context.assets.open(AssetMappingUtilTest.SIMPLEX) }  answers { readAssetJson(
             AssetMappingUtilTest.SIMPLEX
         ) }
+        every { context.assets.open(AssetMappingUtilTest.ONRAMPER) }  answers { readAssetJson(
+            AssetMappingUtilTest.ONRAMPER
+        ) }
     }
 
     private fun readAssetJson(filename: String): InputStream {

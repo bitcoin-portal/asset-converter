@@ -32,6 +32,7 @@ class AssetMappingUtilTest: BaseTest() {
         const val BANXAS = "banxa.json"
         const val MOONPAY = "moonpay.json"
         const val SIMPLEX = "simplex.json"
+        const val ONRAMPER = "onramper.json"
     }
 
 }

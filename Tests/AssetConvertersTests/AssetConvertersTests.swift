@@ -16,6 +16,7 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertFalse(sut.getAssetList(provider: .banxa).isEmpty)
         XCTAssertFalse(sut.getAssetList(provider: .moonpay).isEmpty)
         XCTAssertFalse(sut.getAssetList(provider: .simplex).isEmpty)
+        XCTAssertFalse(sut.getAssetList(provider: .onramper).isEmpty)
     }
 
     func testCanConvertProviderAssetToAssetIdV2() {
@@ -52,6 +53,11 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "eth_arbitrum", provider: .onramper), "ARB1-ETH-ETH")
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "USDC_ARBITRUM", provider: .moonpay), "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831")
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "usdc_arbitrum", provider: .onramper), "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "USDT_ARBITRUM", provider: .moonpay), "ARB1-ERC20-0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "usdt_arbitrum", provider: .onramper), "ARB1-ERC20-0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9")
+        // WBTC on Arbitrum is Onramper-only: MoonPay lists no WBTC on any network.
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "wbtc_arbitrum", provider: .onramper), "ARB1-ERC20-0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f")
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "WBTC_ARBITRUM", provider: .moonpay), nil)
     }
 
     func testCanConvertArbitrumAssetIdV2ToProviderAsset() {
@@ -61,6 +67,13 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831", provider: .onramper), "usdc_arbitrum")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xaf88d065e77c8cc2239327c5edb3a432268e5831", provider: .moonpay), "USDC_ARBITRUM")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xaf88d065e77c8cc2239327c5edb3a432268e5831", provider: .onramper), "usdc_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9", provider: .moonpay), "USDT_ARBITRUM")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9", provider: .onramper), "usdt_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9", provider: .moonpay), "USDT_ARBITRUM")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9", provider: .onramper), "usdt_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f", provider: .onramper), "wbtc_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f", provider: .onramper), "wbtc_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f", provider: .moonpay), nil)
     }
 
     // Onramper's ID for native TRON is `trx_tron`, not `trx` (MTDB-26637). The wallet feeds this
