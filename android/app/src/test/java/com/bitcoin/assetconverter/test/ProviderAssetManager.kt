@@ -61,7 +61,8 @@ class ProviderAssetManager: BaseTest() {
             ProviderType.ONRAMPER to listOf(
                 "usdt_arbitrum" to USDT_ARBITRUM,
                 "usdc_arbitrum" to USDC_ARBITRUM,
-                "wbtc_arbitrum" to WBTC_ARBITRUM
+                "wbtc_arbitrum" to WBTC_ARBITRUM,
+                "arb_arbitrum" to ARB_ARBITRUM
             )
         )
 
@@ -77,18 +78,21 @@ class ProviderAssetManager: BaseTest() {
         }
     }
 
-    // WBTC is Onramper-only: MoonPay lists no WBTC on any network.
+    // Both are Onramper-only: MoonPay lists no WBTC on any network, and has native ARB
+    // suspended. Pin their absence so neither gets added to moonpay.json by reflex.
     @Test
-    fun testMoonpayHasNoArbitrumWbtc(){
+    fun testMoonpayHasNoArbitrumWbtcOrArb(){
         val assetManager = ProviderAssetManager(context)
         val moonpayKeys = assetManager.getAssets(ProviderType.MOONPAY).map { it.providerKey }
         Assert.assertFalse(moonpayKeys.contains("WBTC_ARBITRUM"))
+        Assert.assertFalse(moonpayKeys.contains("ARB_ARBITRUM"))
     }
 
     companion object {
         const val USDC_ARBITRUM = "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
         const val USDT_ARBITRUM = "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
         const val WBTC_ARBITRUM = "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
+        const val ARB_ARBITRUM = "0x912CE59144191C1204E64559FE8253a0e49E6548"
     }
 
 }
