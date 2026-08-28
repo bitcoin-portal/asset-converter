@@ -33,14 +33,6 @@
             "android_asset_protocol": "ERC_20_PROTOCOL"
         },
         {
-            "compound_key": "wbtc_arbitrum",
-            "asset_id": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
-            "ios_blockchain": "ARB1",
-            "ios_asset_protocol": "ERC20",
-            "android_blockchain": "ARB1_BLOCKCHAIN",
-            "android_asset_protocol": "ERC_20_PROTOCOL"
-        },
-        {
             "compound_key": "btc",
             "asset_id": "BTC",
             "ios_blockchain": "BTC",

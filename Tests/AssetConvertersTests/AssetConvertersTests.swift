@@ -55,8 +55,8 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "usdc_arbitrum", provider: .onramper), "ARB1-ERC20-0xaf88d065e77c8cC2239327C5EDb3A432268e5831")
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "USDT_ARBITRUM", provider: .moonpay), "ARB1-ERC20-0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9")
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "usdt_arbitrum", provider: .onramper), "ARB1-ERC20-0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9")
-        // WBTC on Arbitrum is Onramper-only: MoonPay lists no WBTC on any network.
-        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "wbtc_arbitrum", provider: .onramper), "ARB1-ERC20-0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f")
+        // WBTC on Arbitrum is being dropped for buy and sell, so neither provider lists it.
+        XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "wbtc_arbitrum", provider: .onramper), nil)
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "WBTC_ARBITRUM", provider: .moonpay), nil)
         // Native ARB is Onramper-only: MoonPay has the asset suspended (arb_arb).
         XCTAssertEqual(sut.convertProviderAssetToAssetIdV2(asset: "arb_arbitrum", provider: .onramper), "ARB1-ERC20-0x912CE59144191C1204E64559FE8253a0e49E6548")
@@ -74,8 +74,7 @@ final class AssetConvertersTests: XCTestCase {
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9", provider: .onramper), "usdt_arbitrum")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9", provider: .moonpay), "USDT_ARBITRUM")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9", provider: .onramper), "usdt_arbitrum")
-        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f", provider: .onramper), "wbtc_arbitrum")
-        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f", provider: .onramper), "wbtc_arbitrum")
+        XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f", provider: .onramper), nil)
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f", provider: .moonpay), nil)
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "ARB1-ERC20-0x912CE59144191C1204E64559FE8253a0e49E6548", provider: .onramper), "arb_arbitrum")
         XCTAssertEqual(sut.convertAssetIdV2ToProviderAsset(assetIdV2: "arb1-erc20-0x912ce59144191c1204e64559fe8253a0e49e6548", provider: .onramper), "arb_arbitrum")
